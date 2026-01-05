@@ -1,3 +1,4 @@
 feh
 picom
 tint2
+mate-media
