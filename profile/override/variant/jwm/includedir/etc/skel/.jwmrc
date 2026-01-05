@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<JWM>
+
+
+	<!--
+
+		## Link
+
+		* https://github.com/joewing/jwm
+		* https://joewing.net/projects/jwm/config.html
+		* https://github.com/samwhelp/jwm-adjustment/blob/main/prototype/main/jwm-config/part/Modular-Profile/asset/overlay/etc/skel/.jwmrc
+
+	//-->
+
+
+	<!-- ## Port //-->
+	<Include>$HOME/.config/jwm/port/init.conf</Include>
+
+
+</JWM>

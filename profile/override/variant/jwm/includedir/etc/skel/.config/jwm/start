@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+
+#picom &
+
+
+nm-applet &
+
+
+variety &
+
+
+mate-volume-control-status-icon &
+
+
+plank &
