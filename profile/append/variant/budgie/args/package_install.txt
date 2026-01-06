@@ -1,0 +1,5 @@
+budgie-desktop
+budgie-desktop-view
+budgie-control-center
+budgie-screensaver
+magpie
