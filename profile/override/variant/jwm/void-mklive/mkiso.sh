@@ -188,6 +188,26 @@ build_variant() {
             SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
             LIGHTDM_SESSION=fluxbox
         ;;
+        openbox)
+            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter openbox gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+            SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
+            LIGHTDM_SESSION=openbox
+        ;;
+        bspwm)
+            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter bspwm gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+            SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
+            LIGHTDM_SESSION=bspwm
+        ;;
+        i3wm)
+            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter i3 gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+            SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
+            LIGHTDM_SESSION=i3
+        ;;
+        herbstluftwm)
+            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter herbstluftwm gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+            SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
+            LIGHTDM_SESSION=herbstluftwm
+        ;;
         *)
             >&2 echo "Unknown variant $variant"
             exit 1
