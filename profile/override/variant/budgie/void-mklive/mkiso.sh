@@ -181,7 +181,7 @@ build_variant() {
         budgie)
             PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter budgie-desktop gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
             SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
-            LIGHTDM_SESSION=budgie
+            LIGHTDM_SESSION=budgie-desktop
         ;;
         jwm)
             PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter jwm gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
