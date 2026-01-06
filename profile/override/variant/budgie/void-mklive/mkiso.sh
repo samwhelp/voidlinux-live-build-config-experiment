@@ -178,10 +178,14 @@ build_variant() {
             PKGS="$PKGS $XORG_PKGS lxqt sddm gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
             SERVICES="$SERVICES dbus dhcpcd wpa_supplicant sddm polkitd"
         ;;
+#        budgie)
+#            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter budgie-desktop gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+#            SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
+#            LIGHTDM_SESSION=budgie-desktop
+#        ;;
         budgie)
-            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter budgie-desktop gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
-            SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
-            LIGHTDM_SESSION=budgie-desktop
+            PKGS="$PKGS $XORG_PKGS sddm budgie-desktop gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+            SERVICES="$SERVICES dbus sddm NetworkManager polkitd wpa_supplicant"
         ;;
         jwm)
             PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter jwm gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
