@@ -194,7 +194,7 @@ build_variant() {
             LIGHTDM_SESSION=openbox
         ;;
         bspwm)
-            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter bspwm gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
+            PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter bspwm sxhkd gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox"
             SERVICES="$SERVICES dbus lightdm NetworkManager polkitd"
             LIGHTDM_SESSION=bspwm
         ;;
